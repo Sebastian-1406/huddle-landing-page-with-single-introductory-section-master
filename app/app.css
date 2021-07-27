@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --morado : hsl(257, 40%, 49%);
+    --rosa : hsl(300, 69%, 71%);
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--morado);
+    background-image: url("../images/bg-desktop.svg");
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 1200px;
+}
+
+.logo{
+    width: 200px;
+}
+.img{
+    width: 650px;
+}
+
+.contenedor-texto{
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header .titulo{
+    color: #eee;
+}
+.header .parrafo{
+    margin: 20px 0;
+    color: #eeee;
+}
+.header .btn{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 12px 50px;
+    background: #ffff;
+    box-shadow: 0px 0px 8px #0005;
+    color: var(--morado);
+    margin: 10px 0;
+    transition: box-shadow , color, background  .5s;
+}
+.header .btn:hover{
+    color: #eee;
+    background: var(--rosa);
+    box-shadow: 0px 4px 10px #0006;
+
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.contenedor-iconos{
+    display: inline-flex;
+    gap: 15px;
+    
+}
+
+.fab{
+    border: 1px solid #eee;
+    color: #eee;
+    font-size: 14px;
+    padding: 10px ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color, border .5s;
+}
+.fab:hover{
+    color: var(--rosa);
+    border: 1px solid var(--rosa);
+}
